@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+<body style="background-color:#e6e8ed">
+<?php
+        ?>
+
+<div class="container" id="container" style="background-color:white">
+
+    <header>
+        <a  href="home.php"> <img src="images/logo.png"  alt="foto kan niet worden geladen"/> </a>
+    </header>
+
+    <div class="btn-group btn-group-justified">
+        <a href="login.php" class="btn btn-primary navbutton">Apotheker</a>
+        <a href="login.php" class="btn btn-primary navbutton">Arts</a>
+        <a href="login.php" class="btn btn-primary navbutton">Verzekering medewerker</a>
+    </div>
+
+    <div id="main-home" >
+
+        <div class="w3-container" id="content">
+
+
+            <h1 class="text-center">Welkom bij de applicatie van de Zilveren Kruis</h1>
+
+            <p class="text-left">
+                Deze applicatie is ontworpen om de samenwerking met arts,
+                apotheker en verzekering medewerker soepel te laten verlopen. doormiddel van een
+                database waar de 3 personen een betere link met elkaar krijgen. De arts zorgt voor
+                het proces van het recept voorschrijven aan zijn patient. De apotheker krijgt het recept binnen.
+                De patient zal de medicijn vervolgens moeten ophalen. De apotheker geeft het medicijn aan de patient.
+                Als het medicijn is opgehaald dan geeft de apotheker dat aan via de applictaie. Dit kan de verzekering
+                medewerker zien die ook het bedrag nodig heeft die betaald moet worden voor de medicijn.
+            </p>
+
+            <h1 style='text-align:center'> Hoe start ik de applicatie?</h1>
+
+            <p style='text-align:center;'>
+                U kunt de applicatie starten door te kiezen tussen arts, apotheker of verzekering medewerker.
+                Vervolgens komt er een inlogpagina voor bij de toebehorende persoon. Wij wensen u veel werkplezier!
+            </p>
+
+            <a href="contact.php" <button class="btn btn-responsive" id="contactbutton"> Contact </button> </a>
+
+        </div>
+
+    </div>
+</body>
+{% endblock %}
